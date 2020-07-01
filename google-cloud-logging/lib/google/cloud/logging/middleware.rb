@@ -57,7 +57,7 @@ module Google
         def initialize app, logger: nil, on_init: nil, **kwargs
           @app = app
 
-          load_config kwargs
+          load_config **kwargs
 
           logger ||= Middleware.logger
           logger ||= begin

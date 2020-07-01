@@ -50,7 +50,7 @@ module Google
           require "rack/request"
           @app = app
 
-          load_config kwargs
+          load_config **kwargs
 
           @error_reporting =
             error_reporting ||

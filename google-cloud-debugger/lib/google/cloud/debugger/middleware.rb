@@ -108,7 +108,7 @@ module Google
         def initialize app, debugger: nil, **kwargs
           @app = app
 
-          load_config kwargs
+          load_config **kwargs
 
           if debugger
             @debugger = debugger

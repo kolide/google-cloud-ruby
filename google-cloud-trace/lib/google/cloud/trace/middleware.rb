@@ -154,7 +154,7 @@ module Google
         def initialize app, service: nil, **kwargs
           @app = app
 
-          load_config kwargs
+          load_config **kwargs
 
           if service
             @service = service
